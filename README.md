@@ -1,6 +1,6 @@
 # 💡 Explore field options to choose
 
-Explore field options to choose is a dynamic, interactive platform designed to help students and professionals explore, understand, and pursue career paths in technology and beyond. It breaks down **fields of study**, **career options**, **skills required**, and—critically—**the tangible outputs of each role** to empower users to make informed, confident decisions.
+**Explore field options to choose** is a dynamic, interactive platform designed to help students and professionals explore, understand, and pursue career paths in technology and beyond. It breaks down **fields of study**, **career options**, **skills required**, and—critically—**the tangible outputs of each role** to empower users to make informed, confident decisions.
 
 ## 🎯 Purpose
 
@@ -62,40 +62,3 @@ This platform is built with flexibility in mind. Upcoming expansions may include
 Each new field will follow the same modular format: detailed breakdowns, role-specific roadmaps, and curated learning paths.
 
 ---
-
-## 🛠️ Tech Stack (Planned/Recommended)
-
-- **Frontend**: React + Next.js for dynamic routing
-- **Backend (optional)**: Node.js/Express or Firebase Functions for search & user history
-- **CMS/Content Handling**: Markdown for easy updates, MDX for embedding components
-- **Hosting**: Vercel / Netlify / GitHub Pages
-- **Interactivity**: Interactive graphs or flowcharts (e.g., D3.js, Mermaid, or React Flow)
-- **Search**: Algolia or Lunr.js for full-text search on career keywords/resources
-
----
-
-## 🤝 Contributing
-
-Want to help others make smarter career choices? This site welcomes:
-
-- ✅ Resource curation (books, courses, communities)
-- 🧭 Personal career stories
-- 🔧 Code/feature improvements
-
----
-
-## 📬 Feedback & Contact
-
-Have an idea or suggestion? Submit an issue or reach out via our feedback form on the site.
-
----
-
-## 📖 License
-
-[MIT License](./LICENSE)
-
----
-
-> _"Clarity precedes mastery. The better you understand a path, the more confidently you can walk it."_  
-> — CareerScope Navigator
-
