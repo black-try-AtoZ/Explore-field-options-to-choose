@@ -1,0 +1,33 @@
+/* Section Icon Styling */
+.section-title i {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+/* "What You’ll Learn" List */
+.recent-updates {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recent-updates li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--dark);
+}
+
+.recent-updates li i {
+  color: var(--success);
+  margin-right: 0.75rem;
+}
+
+/* Career Opportunities List */
+.card ul.recent-updates li i.fa-code,
+.card ul.recent-updates li i.fa-robot,
+.card ul.recent-updates li i.fa-database,
+.card ul.recent-updates li i.fa-bug,
+.card ul.recent-updates li i.fa-cogs {
+  color: var(--primary);
+}
