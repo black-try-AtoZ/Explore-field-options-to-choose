@@ -29,8 +29,14 @@
   list-style: none;
 }
 
+.career-grid::after {
+  content: "";
+  flex: 1 1 calc(33.333% - 1rem);
+  visibility: hidden;
+}
+
 .career-grid li {
-  flex: 1 1 calc(50% - 1rem); /* 2 columns */
+  flex: 1 1 calc(33.33% - 1rem); /* 3 columns */
   background: var(--card-bg);
   padding: 10px;
   border-radius: 8px;
