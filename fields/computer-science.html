@@ -5,14 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Computer Science | Tech Explorer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="../header-footer.css">
-  <link rel="stylesheet" href="../styles/computer-science.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/videos.css">
+  <link rel="stylesheet" href="../styles/list_layout.css">
   <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="../resources.html"><i class="fas fa-book"></i> Resources</a></li>
+    </ul>
+  </nav>
+
   <div class="page">
     <div class="container">
-
       <!-- Header -->
       <section class="card">
         <h1 class="section-title">
@@ -27,7 +34,7 @@
       <section class="card">
         <h2 class="section-title"><i class="fas fa-stream"></i> What You’ll Learn</h2>
         <ul class="recent-updates">
-          <li><i class="fas fa-check-circle"></i> Programming languages (Python, Java, C++)</li>
+          <li><i class="fas fa-check-circle"></i> Programming languages (C++, Java, HTML, CSS, Javascript, C#)</li>
           <li><i class="fas fa-check-circle"></i> Data Structures and Algorithms</li>
           <li><i class="fas fa-check-circle"></i> Operating Systems and Computer Architecture</li>
           <li><i class="fas fa-check-circle"></i> Artificial Intelligence and Machine Learning</li>
@@ -35,16 +42,30 @@
         </ul>
       </section>
 
+      <!-- Embedded Video -->
+      <section class="card">
+        <div class="section-text">
+          <h2 class="section-title"><i class="fas fa-video"></i> Watch and consider</h2>
+          <p>Check out this videos to get a glimpse into the opinion of Computer Science students:</p>
+        </div>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/xHCQOOzphz8?si=tt3WyCrvvJ0CRU-T"
+            title="YouTube video 1" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/QlOv1aYOQQ4?si=JGB83j28cXojOZMC"
+            title="YouTube video 2" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
+
       <!-- Career Paths -->
       <section class="card">
         <h2 class="section-title"><i class="fas fa-user-graduate"></i> Career Opportunities</h2>
-        <p>Studying Computer Science opens doors to a range of high-impact roles:</p>
-        <ul class="recent-updates">
-          <li><i class="fas fa-code"></i> Software Developer</li>
-          <li><i class="fas fa-robot"></i> AI/ML Engineer</li>
-          <li><i class="fas fa-database"></i> Database Administrator</li>
-          <li><i class="fas fa-bug"></i> Quality Assurance Engineer</li>
-          <li><i class="fas fa-cogs"></i> Systems Architect</li>
+        <p>Studying Computer Science opens doors to these roles:</p>
+        <ul class="recent-updates career-grid">
+          <li><i class="fas fa-code icon-circle"></i> <a href="../career/software-developer.html">Software Developer</a></li>
+          <li><i class="fas fa-robot icon-circle"></i> <a href="../career/ai-ml-engineer.html">AI/ML Engineer</a></li>
+          <li><i class="fas fa-database icon-circle"></i> <a href="../career/database-administrator.html">Database Administrator</a></li>
+          <li><i class="fas fa-bug icon-circle"></i> <a href="../career/quality-assurance-engineer.html">Quality Assurance Engineer</a></li>
+          <li><i class="fas fa-cogs icon-circle"></i> <a href="../career/systems-architect.html">Systems Architect</a></li>
         </ul>
       </section>
 

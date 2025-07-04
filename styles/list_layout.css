@@ -1,0 +1,71 @@
+.recent-updates {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recent-updates li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin: 0.5rem auto;
+  color: var(--dark);
+}
+
+.recent-updates li i {
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+}
+
+/* Green checkmarks for learning topics */
+.recent-updates li i.fa-check-circle {
+  color: var(--success);
+}
+
+.career-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.career-grid li {
+  flex: 1 1 calc(50% - 1rem); /* 2 columns */
+  background: var(--card-bg);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.career-grid li:hover {
+  background: gray;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  transform: translateY(-2px);
+}
+
+/* Optional: icons a bit spaced */
+.career-grid li i {
+  margin-right: 8px;
+}
+
+/* Reusable circular icon style */
+.icon-circle {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+/* Responsive for small screens (1 column) */
+@media (max-width: 600px) {
+  .career-grid li {
+    flex: 1 1 100%;
+  }
+}
