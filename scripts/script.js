@@ -20,3 +20,17 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = `/${page}`;
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollBtn = document.getElementById("scrollUpBtn");
+
+    // Show button only when scrolling down
+    window.addEventListener("scroll", () => {
+        scrollBtn.style.display = window.scrollY > 270 ? "block" : "none";
+    });
+
+    // Scroll to the top when clicked
+    scrollBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});

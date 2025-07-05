@@ -48,7 +48,7 @@ body {
 /* Header Styles */
 header {
     background: linear-gradient(to right, var(--primary), var(--secondary));
-    color: white;
+    color: var(--card-bg);
     padding: 2rem 1rem;
     text-align: center;
     box-shadow: var(--shadow);
@@ -71,6 +71,7 @@ nav {
   background-color: var(--primary);
   padding: 1rem 2rem;
   box-shadow: var(--shadow);
+  z-index: 10;
 }
 
 nav ul {
@@ -86,7 +87,7 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: var(--card-bg);
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -97,7 +98,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--accent);
+  color: var(--warning);
 }
 
 h1 {
@@ -172,7 +173,7 @@ a:visited {
     border: 2px solid #dbeafe;
     border-radius: 12px;
     overflow: hidden;
-    background: white;
+    background: var(--card-bg);
     transition: var(--transition);
     cursor: pointer;
     height: 100%;
@@ -187,7 +188,7 @@ a:visited {
 
 .field-header {
     background: linear-gradient(to right, var(--primary), var(--secondary));
-    color: white;
+    color: var(--card-bg);
     padding: 1.2rem;
     position: relative;
 }
@@ -254,7 +255,7 @@ a:visited {
 
 .btn-primary {
     background: linear-gradient(to right, var(--primary), var(--accent));
-    color: white;
+    color: var(--card-bg);
 }
 
 .btn-outline {
@@ -277,7 +278,7 @@ a:visited {
 /* Career Detail Page */
 .career-header {
     background: linear-gradient(to right, var(--primary), var(--secondary));
-    color: white;
+    color: var(--card-bg);
     padding: 2rem;
     border-radius: 12px;
     margin-bottom: 2rem;
@@ -291,7 +292,7 @@ a:visited {
 }
 
 .roadmap-step {
-    background: white;
+    background: var(--card-bg);
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: var(--shadow);
@@ -366,7 +367,7 @@ a:visited {
 }
 
 .community-card {
-    background: white;
+    background: var(--card-bg);
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: var(--shadow);
@@ -391,7 +392,7 @@ a:visited {
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
-    color: white;
+    color: var(--card-bg);
     font-size: 1.5rem;
 }
 
@@ -402,7 +403,7 @@ a:visited {
 
 /* Quiz Page */
 .quiz-container {
-    background: white;
+    background: var(--card-bg);
     border-radius: 12px;
     padding: 2rem;
     box-shadow: var(--shadow);
@@ -445,7 +446,7 @@ a:visited {
 }
 
 .result-card {
-    background: white;
+    background: var(--card-bg);
     border-radius: 12px;
     padding: 2rem;
     box-shadow: var(--shadow);
@@ -517,7 +518,7 @@ a:visited {
 
 .call-to-action .btn-primary {
   background-color: var(--primary);
-  color: white;
+  color: var(--card-bg);
   border: none;
 }
 
@@ -536,12 +537,35 @@ a:visited {
 
 .call-to-action .btn-outline:hover {
   background-color: var(--primary);
-  color: white;
+  color: var(--card-bg);
+}
+
+#scrollUpBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Hide by default */
+    transition: opacity 0.3s ease-in-out;
+}
+
+#scrollUpBtn:hover {
+    background-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 footer {
     background: var(--dark);
-    color: white;
+    color: var(--card-bg);
     text-align: center;
     padding: 2rem;
     position: static;
@@ -552,6 +576,14 @@ footer {
 footer .dedication {
     color: var(--success);
     font-size: 1.5rem;
+}
+
+footer .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 1.25rem;
 }
 
 /* Responsive */

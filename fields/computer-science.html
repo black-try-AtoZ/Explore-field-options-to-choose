@@ -6,22 +6,28 @@
   <title>Computer Science | Tech Explorer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../styles/styles.css">
-  <link rel="stylesheet" href="../styles/videos.css">
-  <link rel="stylesheet" href="../styles/list_layout.css">
+  <link rel="stylesheet" href="../styles/layout.css">
   <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+  <script>
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+  </script>
 </head>
 <body>
   <nav class="top-nav">
-        <ul class="nav-menu">
-            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="../fields/computer-science.html"><i class="fas fa-laptop-code"></i> Computer Science</a></li>
-            <li><a href="../fields/information-technology.html"><i class="fas fa-network-wired"></i> IT</a></li>
-            <li><a href="../fields/cybersecurity.html"><i class="fas fa-shield-alt"></i> Cybersecurity</a></li>
-            <li><a href="../fields/software-engineering.html"><i class="fas fa-code"></i> Software Engineering</a></li>
-            <li><a href="../fields/data-science-ai.html"><i class="fas fa-brain"></i> Data Science & AI</a></li>
-            <li><a href="../fields/cloud-computing.html"><i class="fas fa-cloud"></i> Cloud Computing</a></li>
-            <li><a href="../resources.html"><i class="fas fa-book-open"></i> Resources</a></li>
-        </ul>
+    <ul class="nav-menu">
+        <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="../fields/computer-science.html"><i class="fas fa-laptop-code"></i> Computer Science</a></li>
+        <li><a href="../fields/information-technology.html"><i class="fas fa-network-wired"></i> IT</a></li>
+        <li><a href="../fields/cybersecurity.html"><i class="fas fa-shield-alt"></i> Cybersecurity</a></li>
+        <li><a href="../fields/software-engineering.html"><i class="fas fa-code"></i> Software Engineering</a></li>
+        <li><a href="../fields/data-science-ai.html"><i class="fas fa-brain"></i> Data Science & AI</a></li>
+        <li><a href="../fields/cloud-computing.html"><i class="fas fa-cloud"></i> Cloud Computing</a></li>
+        <li><a href="../resources.html"><i class="fas fa-book-open"></i> Resources</a></li>
+    </ul>
   </nav>
 
   <div class="page">
@@ -70,21 +76,21 @@
         <h2 class="section-title"><i class="fas fa-user-graduate"></i> Career Opportunities</h2>
         <p>Studying Computer Science opens doors to these roles:</p>
         <ul class="recent-updates career-grid">
-          <li><i class="fas fa-robot icon-circle"></i> <a href="../career/ai-ml-engineer.html">AI/ML Engineer</a></li>
-          <li><i class="fas fa-chart-line icon-circle"></i> <a href="../career/data-scientist.html">Data Scientist</a></li>
-          <li><i class="fas fa-shield-alt icon-circle"></i> <a href="../career/cybersecurity-analyst.html">Cybersecurity Analyst</a></li>
-          <li><i class="fas fa-cloud icon-circle"></i> <a href="../career/cloud-solutions-architect.html">Cloud Solutions Architect</a></li>
-          <li><i class="fas fa-sync-alt icon-circle"></i> <a href="../career/devops-engineer.html">DevOps Engineer</a></li>
-          <li><i class="fas fa-code icon-circle"></i> <a href="../career/software-developer.html">Software Developer</a></li>
-          <li><i class="fas fa-cubes icon-circle"></i> <a href="../career/blockchain-developer.html">Blockchain Developer</a></li>
-          <li><i class="fas fa-gamepad icon-circle"></i> <a href="../career/game-developer.html">Game Developer</a></li>
-          <li><i class="fas fa-globe icon-circle"></i> <a href="../career/web-developer.html">Web Developer</a></li>
-          <li><i class="fas fa-flask icon-circle"></i> <a href="../career/research-scientist.html">Research Scientist (AI, HCI, etc.)</a></li>
-          <li><i class="fas fa-boxes icon-circle"></i> <a href="../career/systems-architect.html">Systems Architect</a></li>
-          <li><i class="fas fa-database icon-circle"></i> <a href="../career/database-administrator.html">Database Administrator</a></li>
-          <li><i class="fas fa-bug icon-circle"></i> <a href="../career/quality-assurance-engineer.html">Quality Assurance Engineer</a></li>
-          <li><i class="fas fa-tasks icon-circle"></i> <a href="../career/technical-product-manager.html">Technical Product Manager</a></li>
-          <li><i class="fas fa-pencil-ruler icon-circle"></i> <a href="../career/ux-ui-designer.html">UX/UI Designer</a></li>
+          <li><i class="fas fa-robot icon-circle"></i> <a href="https://www.computerscience.org/resources/landing-a-job-in-artificial-intelligence/" target="_blank">AI/ML Engineer</a></li>
+          <li><i class="fas fa-chart-line icon-circle"></i> <a href="https://www.computerscience.org/careers/data-science/how-to-become/" target="_blank">Data Scientist</a></li>
+          <li><i class="fas fa-shield-alt icon-circle"></i> <a href="https://www.computerscience.org/careers/information-security-analyst/" target="_blank">Cybersecurity Analyst</a></li>
+          <li><i class="fas fa-cloud icon-circle"></i> <a href="https://www.computerscience.org/careers/information-technology-architect/" target="_blank">Cloud Solutions Architect</a></li>
+          <li><i class="fas fa-sync-alt icon-circle"></i> <a href="https://www.computerscience.org/careers/software-developer/" target="_blank">DevOps Engineer</a></li>
+          <li><i class="fas fa-code icon-circle"></i> <a href="https://www.computerscience.org/careers/software-developer/" target="_blank">Software Developer</a></li>
+          <li><i class="fas fa-cubes icon-circle"></i> <a href="https://www.computerscience.org/bootcamps/rankings/best-crypto-bootcamps/" target="_blank">Blockchain Developer</a></li>
+          <li><i class="fas fa-gamepad icon-circle"></i> <a href="https://www.computerscience.org/careers/video-game-designer/" target="_blank">Game Developer</a></li>
+          <li><i class="fas fa-globe icon-circle"></i> <a href="https://www.computerscience.org/careers/web-developer/" target="_blank">Web Developer</a></li>
+          <li><i class="fas fa-flask icon-circle"></i> <a href="https://www.computerscience.org/careers/computer-information-researcher/" target="_blank">Research Scientist (AI, HCI, etc.)</a></li>
+          <li><i class="fas fa-boxes icon-circle"></i> <a href="https://www.computerscience.org/careers/information-technology-architect/" target="_blank">Systems Architect</a></li>
+          <li><i class="fas fa-database icon-circle"></i> <a href="https://www.computerscience.org/careers/database-administrator/" target="_blank">Database Administrator</a></li>
+          <li><i class="fas fa-bug icon-circle"></i> <a href="https://www.computerscience.org/careers/software-developer/" target="_blank">Quality Assurance Engineer</a></li>
+          <li><i class="fas fa-tasks icon-circle"></i> <a href="https://www.computerscience.org/bootcamps/rankings/best-product-management-bootcamps/" target="_blank">Technical Product Manager</a></li>
+          <li><i class="fas fa-pencil-ruler icon-circle"></i> <a href="https://www.computerscience.org/bootcamps/rankings/ux-ui/" target="_blank">UX/UI Designer</a></li>
         </ul>
       </section>
 
@@ -101,9 +107,23 @@
     </div>
   </div>
 
+  <button id="scrollUpBtn">▲</button>
   <footer>
-    <p>Made with <i class="fas fa-heart" style="color: #ff6b6b;"></i> for <span  class="dedication">Maramawit A.</span> to explore tech careers</p>
+    <div class="footer-icons" aria-hidden="true">
+        <i class="fas fa-lightbulb" title="Creativity" style="color: #f1c40f;"></i>
+        <i class="fas fa-hands-helping" title="Support" style="color: #ff6b6b;"></i>
+        <i class="fas fa-code" title="Technology" style="color: #2ecc71;"></i>
+        <i class="fas fa-users" title="Community" style="color: #9b59b6;"></i>
+        <i class="fas fa-rocket" title="Ambition" style="color: #e67e22;"></i>
+        <i class="fas fa-globe" title="Global Reach" style="color: #3498db;"></i>
+        <i class="fas fa-fire" title="Passion" style="color: #e74c3c;"></i>
+        <i class="fas fa-meteor" title="Momentum" style="color: #3498db;"></i>
+        <i class="fas fa-sun" title="Positivity" style="color: #f39c12;"></i>
+        <i class="fas fa-thumbs-up" title="Support & Encouragement" style="color: #27ae60;"></i>
+    </div>
+    <p>Made with care for <span class="dedication">Maramawit A.</span> to explore tech careers</p>
     <p>© 2017 E.C Tech Career Explorer | All rights reserved</p>
   </footer>
+  <script src="scripts/script.js"></script>
 </body>
 </html>
